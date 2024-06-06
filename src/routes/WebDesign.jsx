@@ -1,6 +1,6 @@
 import React from "react"
 
-export function WebDesign(){
+export default function WebDesign(){
     return(
             <h1>Web Design</h1>
     )

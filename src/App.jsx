@@ -4,21 +4,19 @@ import Home from './routes/Home';
 import GraphicDesign from './routes/GraphicDesign';
 import WebDesign from './routes/WebDesign';
 import Contacts from './routes/Contacts';
+import Header from './components/Header'
 
 function App() {
   return (
     <>
-      <Link to="/">Home</Link>
-      <Link to="/GraphicDesign">Graphic Design</Link>
-      <Link to="/WebDesign">Web Design</Link>
-      <Link to="/Contacts">Contacts</Link>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/GraphicDesign" element={<GraphicDesign />} />
-        <Route path="/WebDesign" element={<WebDesign />} />
+        <Route path="/Graphic Design" element={<GraphicDesign />} />
+        <Route path="/Web Design" element={<WebDesign />} />
         <Route path="/Contacts" element={<Contacts />} />
       </Routes>
-      </>
+    </>
   )
 }
 

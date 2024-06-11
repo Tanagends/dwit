@@ -1,0 +1,268 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* For Additional CSS */
+@layer base {
+
+/* Animation for the typing effect */
+/* Animation for the READY */
+.ready h1{
+    animation: ready ease-out 1s forwards;
+    @apply -translate-x-96;
+    opacity: 0;
+  }
+  .ready {
+    & :nth-child(1){
+      animation-delay: 1s;
+    }
+    & :nth-child(2){
+      animation-delay: .8s;
+    }
+    & :nth-child(3){
+      animation-delay: .6s;
+    }
+    & :nth-child(4){
+      animation-delay: .4s;
+    }
+    & :nth-child(5){
+      animation-delay: .2s;
+      }
+    }
+  @keyframes ready {
+    0%{
+      opacity: 0;      
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0%);
+    }    
+  }
+@keyframes ready {
+  0% {
+
+  }
+}
+
+
+  /* Others */
+.nav-btn{
+    animation: heros ease-in-out 1s forwards;
+    animation-delay: 1.5;
+}
+.hero-1{
+    animation: heros ease-in-out 1.2s forwards;
+    animation-delay: 1s;
+}
+.hero-2{
+    animation: heros ease-in-out 1.4s forwards;
+    animation-delay: 1s;
+}
+@keyframes heros {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+  /* Fot the contacts button */
+  .contacts{
+    animation: slide-in ease-in-out 1s forwards;
+  }
+  @keyframes slide-in {
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+  }
+  /* For the home button */
+  .home{
+    animation: switch ease-in-out 1s forwards;
+    animation-delay: .5s;
+    }
+    /* Button for darkMode */
+    .switch {
+        font-size: 17px;
+        position: relative;
+        display: inline-block;
+        width: 64px;
+        height: 34px;
+        animation: switch ease-in-out 1s forwards;
+        animation-delay: .5s;
+      }
+    
+      @keyframes switch {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+            transform: translateY(0%);
+        }    
+      }
+      .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+      
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        @apply bg-main-600;
+        transition: .4s;
+        border-radius: 30px;
+      }
+      
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 30px;
+        width: 30px;
+        border-radius: 20px;
+        left: 2px;
+        bottom: 2px;
+        z-index: 2;
+        background-color: #e8e8e8;
+        transition: .4s;
+      }
+      
+      .sun svg {
+        position: absolute;
+        top: 6px;
+        left: 36px;
+        z-index: 1;
+        width: 24px;
+        height: 24px;
+      }
+      
+      .moon svg {
+        fill: #73C0FC;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        z-index: 1;
+        width: 24px;
+        height: 24px;
+      }
+      
+      /* .switch:hover */.sun svg {
+        animation: rotate 15s linear infinite;
+      }
+      
+      @keyframes rotate {
+       
+        0% {
+          transform: rotate(0);
+        }
+      
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      
+      /* .switch:hover */.moon svg {
+        animation: tilt 5s linear infinite;
+      }
+      
+      @keyframes tilt {
+       
+        0% {
+          transform: rotate(0deg);
+        }
+      
+        25% {
+          transform: rotate(-10deg);
+        }
+      
+        75% {
+          transform: rotate(10deg);
+        }
+      
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+      
+      .input:checked + .slider {
+        background-color: #183153;
+      }
+      
+      .input:focus + .slider {
+        box-shadow: 0 0 1px #183153;
+      }
+      
+      .input:checked + .slider:before {
+        transform: translateX(30px);
+      } 
+      .action{
+        opacity: 0;
+        animation: outwards 1s ease-in-out forwards;
+        animation-delay: 2s;
+      }
+      @keyframes outwards {
+        0%{
+          opacity: 0;
+        }
+        100%{
+          opacity: 1;
+          transform: scale(100%);
+      }    
+    }
+    .cursor{
+      animation: blinker .5s ease-in-out infinite;
+    }
+
+    @keyframes blinker {
+    0%,100%{
+      opacity: 0;
+    }      
+    50%{
+      opacity: 1;
+    }
+    }
+
+    /* CSS For Typing Animation*/
+    [class*="letter"]{
+      animation: typing-animation ease-in-out 4s forwards;
+      width: 0;
+    }
+    .letter-1{
+      animation-delay: 0s;
+    }
+    .letter-2{
+      animation-delay: 1s;
+    }
+    .letter-3{
+      animation-delay: 2s;
+    }
+    .letter-4{
+      animation-delay: 3s;
+    }
+    .letter-5{
+      animation-delay: 4s;
+    }
+    .letter-6{
+      animation-delay: 5s;
+    }
+
+    @keyframes typing-animation {
+      from{
+        width: 0;
+      }
+      to{
+        width: 100%;
+        display: block;
+      }
+    }
+}

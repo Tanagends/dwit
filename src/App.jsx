@@ -1,15 +1,15 @@
 import React from 'react';
-import { Link, Routes, Route, BrowserRouter } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Home from './routes/Home';
 import GraphicDesign from './routes/GraphicDesign';
 import WebDesign from './routes/WebDesign';
 import Contacts from './routes/Contacts';
-import Header from './components/Header'
+import Header from './components/Header';
 
 function App() {
   return (
     <>
-      <Header />
+    <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Graphic Design" element={<GraphicDesign />} />

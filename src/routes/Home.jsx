@@ -29,7 +29,7 @@ export default function Home(){
         </div>
         <h1 className="font-bold text-3xl text-white">for</h1>
         <h1 className="font-bold text-3xl text-white">your corporate</h1>
-        {punchline[1]}
+        {punchline[2]}
         <Link className="action scale-[0.4] font-extrabold p-4 text-white border-4 border-white rounded-2xl font-mono text-center text-2xl w-1/2 ml-4 mt-8" to="/Contacts">Get in touch!<i className="bi bi-phone"></i></Link>
         <div className='w-6 h-6 bg-main-600 rounded-full absolute left-4 top-[445px] m-0 p-0 animate-ping'></div><div className='w-6 h-6 bg-main-600 rounded-full absolute left-4 top-[445px] m-0 p-0'></div>
       </article>

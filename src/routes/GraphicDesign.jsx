@@ -2,6 +2,12 @@ import React from 'react'
 
 export default function GraphicDesign(){
     return(
-            <h1>Graphic Design</h1>
+            <section>
+                <article id="flier" title="Flier Designs">
+                    <div className="container">
+
+                    </div>
+                </article>
+            </section>
     )
 }

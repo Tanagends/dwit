@@ -7,6 +7,7 @@ export default function WebDesign(){
     return(
         <>
             <section className="something">
+            <h1 className='text-center font-bold text-2xl sm:text-4xl text-main-700'>Web<i className='text-white'>{' '+'Design'}</i></h1>
                 <article className='flex flex-wrap gap-4 justify-center'>
                     <WebService prop={Services[0]} />                
                     <WebService prop={Services[1]} />                

@@ -5,6 +5,7 @@ import GraphicDesign from './routes/GraphicDesign';
 import WebDesign from './routes/WebDesign';
 import Contacts from './routes/Contacts';
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/Web Design" element={<WebDesign />} />
         <Route path="/Contacts" element={<Contacts />} />
       </Routes>
+    <Footer/>
     </>
   )
 }

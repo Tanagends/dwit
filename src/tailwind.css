@@ -43,13 +43,7 @@
 
   }
 }
-
-
   /* Others */
-.nav-btn{
-    animation: heros ease-in-out 1s forwards;
-    animation-delay: 1.5;
-}
 .hero-1{
     animation: heros ease-in-out 1.2s forwards;
     animation-delay: 1s;
@@ -70,10 +64,16 @@
   /* Fot the contacts button */
   .contacts{
     animation: slide-in ease-in-out 1s forwards;
+    animation-delay: 0ms;
+    transition: ease .6s;
+    &:hover{
+      scale :1.1;
+      @apply border-main-600;
+      @apply text-main-600;
+    }
   }
   @keyframes slide-in {
     0%{
-        transform: translateX(-100%);
         opacity: 0;
     }
     100%{
@@ -234,5 +234,28 @@
     #w7 h1{
       @apply text-main-500;
     }
+
+    /*Graphic Design Page*/
+
+    .images-container{
+      scroll-snap-type: x mandatory;
+    }
+
+    .graphic-image{
+      scroll-snap-align: center;
+    }
     
+    .card-container{
+    scale: .3;
+    opacity: 0;
+    animation: scroll-watcher linear forwards;
+    animation-timeline: view();
+    animation-range: end;
+   }
+  @keyframes scroll-watcher{
+    40%, 100%{
+        scale: 1;
+        opacity: 1;
+    }
+}
   }

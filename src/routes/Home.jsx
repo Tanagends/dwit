@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import React from 'react';
 import '../index.css';
 import './../../bootstrap-icons/font/bootstrap-icons.css';
+import { useState } from 'react';
 
 export default function Home(){
     let punchlines = ['Dylan','Worship', 'Strength', 'Visibility']
@@ -18,9 +19,9 @@ export default function Home(){
     })
     return(
         <>
-    <section className="m-2 p-0 flex flex-row flex-wrap">
-      <article className="w-[50%] flex flex-col gap-4">
-        <div className="ready font-extrabold text-9xl text-white flex">
+    <section className="m-2 p-0 flex flex-col flex-wrap">
+      <article className="w-[50%] flex flex-col gap-2">
+        <div className="ready font-extrabold text-6xl text-white flex">
           <h1 className="ready-child">R</h1>
           <h1 className="ready-child">e</h1>
           <h1 className="ready-child">a</h1>
@@ -29,7 +30,7 @@ export default function Home(){
         </div>
         <h1 className="font-bold text-3xl text-white">for</h1>
         <h1 className="font-bold text-3xl text-white">your corporate</h1>
-        {punchline[2]}
+        <h1>Nothing Yet</h1>
         <Link className="action scale-[0.4] font-extrabold p-4 text-white border-4 border-white rounded-2xl font-mono text-center text-2xl w-1/2 ml-4 mt-8" to="/Contacts">Get in touch!<i className="bi bi-phone"></i></Link>
         <div className='w-6 h-6 bg-main-600 rounded-full absolute left-4 top-[445px] m-0 p-0 animate-ping'></div><div className='w-6 h-6 bg-main-600 rounded-full absolute left-4 top-[445px] m-0 p-0'></div>
       </article>
@@ -51,8 +52,6 @@ export default function Home(){
           </p>
         </div>
       </article>
-        <Link className="nav-btn hover:border-main-400 hover:text-main-600 hover:scale-110 transition-all ease-in duration-200 text-xl fixed bottom-10 block right-[5%] border-2 border-white text-white rounded-full p-3 font-bold translate-y-96" to="/Graphic Design">Graphic Design</Link>
-        <Link className="nav-btn hover:border-main-400 hover:text-main-600 hover:scale-110 transition-all ease-in duration-200 text-xl fixed bottom-10 right-[19%] block border-2 border-white text-white rounded-full p-3 font-bold translate-y-96" to="/Web Design">Web Design</Link>  
     </section>
         </>
     )

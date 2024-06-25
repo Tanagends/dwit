@@ -3,7 +3,8 @@ export default {
   content: [
     "./index.html",
     "./src/components/*.jsx",
-    "./src/routes/*.jsx"
+    "./src/routes/*.jsx",
+    "./src/App.jsx"
   ],
   theme: {
     extend: {
@@ -19,7 +20,8 @@ export default {
           800: "#063841",
           900: "#062f36"         
       },
-        magnify: "#f7a40a"
+        magnify: "#f7a40a",
+        app:'#3DD877'
       },
       screens:{
         xs:'400px',

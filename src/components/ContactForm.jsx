@@ -19,7 +19,7 @@ const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className='flex flex-col p-2 bg-main-800 rounded-md m-2 gap-2 w-[350px] mx-auto sm:w-[400px] md:w-[500px]'>
+    <form onSubmit={handleSubmit} action="https://formsubmit.co/dwtmediadwt@gmail.com" method="POST" className='flex flex-col p-2 bg-main-800 rounded-md m-2 gap-2 w-[350px] mx-auto sm:w-[400px] md:w-[500px]'>
       <h1 className='font-bold py-2'>Send Message</h1>
       <input
         type="text"
